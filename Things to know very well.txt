@@ -1,0 +1,30 @@
+Things to know very well:
+Hooks: useState, useEffect, useContext, useReducer, useMemo, useCallback, useRef
+HOC: what? why? when? how?
+Life cycle methods of compounents
+-class components (componentDidMount, etc...) (9 or 10 mehtods - know the order in which they are called)
+3 phases: mounting, updating, unmounting (useEffect)
+State Managment: state/props, props drilling, context
+Redux toolkit: how? why? when?
+custom hooks? when? --> code --> clean, maintainable, readable, reusable (eg: useLocalStorage)
+Lazy loading: code splitting, chunking, suspence **, also affects SEO
+virtual DOM--> reconciliation, react fiber algorithm, how it renders, diffing algorinthm
+SSR vs CSR: Next.js - what?? difference, SEO peformance 
+Routing ( Role Base Access Control) - RBAC (Different routes for Admin, and diff for other users)
+next.js has its own router, react needs a router library
+ProtectedRoutes --> how to build (twitter.com/user - public route, twitter.com/profie - private route how to build)
+query params
+dynamic routing (slash user/:id)
+win the interviewer by this hack,
+React Testing library (unit testing)
+Async tasks --> useEffect in depth
+-api calls ( axios, fetch, other library)
+- event
+- promises 
+-setTimout/setIntervals
+keywords to use - reusability, Modularity, Testablelity, readable --> coding practices
+when to use custom hook, HOC,to break down a component into smaller comp,how to pass props,manage state of comp/app
+Performance --> slow loading is bad for seo also (save 1 sec, u save million seconds)
+lazy loading, asset optimization, js, css, optimized code
+- bundler optimization, cdn optimz, server level/
+rendering
