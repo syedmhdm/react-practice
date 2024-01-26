@@ -10,6 +10,8 @@ In the project directory, you can run:
 
 ### list of concepts to revise and practice
 
+make resume to pull react and redux in ats and use .docx file for applying
+
 useReducer
 
 redux flux
