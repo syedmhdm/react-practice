@@ -27,4 +27,4 @@ when to use custom hook, HOC,to break down a component into smaller comp,how to 
 Performance --> slow loading is bad for seo also (save 1 sec, u save million seconds)
 lazy loading, asset optimization, js, css, optimized code
 - bundler optimization, cdn optimz, server level/
-rendering
+renderin
