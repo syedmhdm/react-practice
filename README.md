@@ -1,16 +1,23 @@
-# Getting Started with Create React App
+### IBM accessment problems:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+see ibmques.txt file
 
-## Available Scripts
+get questions from the following links:
+https://www.youtube.com/watch?v=FMhyPobb5Mk
 
-In the project directory, you can run:
+https://www.youtube.com/watch?v=DhrFPPWxNU4
 
-### `npm start`
+https://www.codingninjas.com/studio/library/abstraction-in-java?utm_source=cn_ie&utm_medium=learn
+https://www.codingninjas.com/studio/library/inheritance-in-java?utm_source=cn_ie&utm_medium=learn
+https://www.codingninjas.com/studio/library/multithreading-in-java-2972?utm_source=cn_ie&utm_medium=learn
+https://www.geeksforgeeks.org/spring-boot-annotations-jmslistener-retryable-rsocketmessagemapping-constructorbinding-and-slf4j/?ref=header_search
 
-### list of concepts to revise and practice
+https://prepinsta.com/ibm/coding/
+https://prepinsta.com/ibm-syllabus/
 
-make resume to pull react and redux in ats and use .docx file for applying
+https://www.prepbytes.com/ibm-coding-questions
+
+### React JS:
 
 useReducer
 
@@ -39,3 +46,5 @@ all concepts in folder (akshay sahani)
 all concepts in own docs
 
 note and implement all important udemy lectures by own.
+
+### Spring Boot interview questions if selected in IBM:
