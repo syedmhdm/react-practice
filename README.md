@@ -48,3 +48,16 @@ all concepts in own docs
 note and implement all important udemy lectures by own.
 
 ### Spring Boot interview questions if selected in IBM:
+
+sql, dbms
+
+sum of n terms of ap
+star pattern using loops
+strings ques - palindrome & finding character in string
+area of ellipse
+
+In the first technical round, they inquired about fundamental Java concepts, Collections, Spring Boot annotations, Microservices architecture , few production related questions, rest api questions and project specifics. Furthermore, the session included two coding questions, assessing practical coding skills.
+
+What is @Validated annotation in springboot.
+
+Can you inherit multiple classes in Java? Why or why not?
