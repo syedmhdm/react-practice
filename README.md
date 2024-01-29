@@ -1,23 +1,17 @@
 ### IBM accessment problems:
 
-see ibmques.txt file
-
-hacker rank one week's interview prep important ques and leet code problems
-hcf, lcm of 3 nums, decimal to binary
 get questions from the following links:
-https://www.youtube.com/watch?v=FMhyPobb5Mk
+https://www.youtube.com/watch?v=FMhyPobb5Mk --> done
+https://www.youtube.com/watch?v=DhrFPPWxNU4 --> done
+https://prepinsta.com/ibm/coding/ --> done
+https://prepinsta.com/ibm-syllabus/ --> done
 
-https://www.youtube.com/watch?v=DhrFPPWxNU4
+see ibmques.txt file --> done (practice the following questions to get hook of ibm questions)
 
-https://www.codingninjas.com/studio/library/abstraction-in-java?utm_source=cn_ie&utm_medium=learn
-https://www.codingninjas.com/studio/library/inheritance-in-java?utm_source=cn_ie&utm_medium=learn
-https://www.codingninjas.com/studio/library/multithreading-in-java-2972?utm_source=cn_ie&utm_medium=learn
-https://www.geeksforgeeks.org/spring-boot-annotations-jmslistener-retryable-rsocketmessagemapping-constructorbinding-and-slf4j/?ref=header_search
-
-https://prepinsta.com/ibm/coding/
-https://prepinsta.com/ibm-syllabus/
-
-https://www.prepbytes.com/ibm-coding-questions
+https://www.prepbytes.com/ibm-coding-questions (20 questions)
+hcf, lcm of 3 nums, decimal to binary
+hacker rank one week's interview prep's important ques
+leet code interview problems 150 (sql 50)
 
 ### React JS:
 
@@ -63,3 +57,8 @@ In the first technical round, they inquired about fundamental Java concepts, Col
 What is @Validated annotation in springboot.
 
 Can you inherit multiple classes in Java? Why or why not?
+
+https://www.codingninjas.com/studio/library/abstraction-in-java?utm_source=cn_ie&utm_medium=learn
+https://www.codingninjas.com/studio/library/inheritance-in-java?utm_source=cn_ie&utm_medium=learn
+https://www.codingninjas.com/studio/library/multithreading-in-java-2972?utm_source=cn_ie&utm_medium=learn
+https://www.geeksforgeeks.org/spring-boot-annotations-jmslistener-retryable-rsocketmessagemapping-constructorbinding-and-slf4j/?ref=header_search
