@@ -2,6 +2,7 @@
 
 see ibmques.txt file
 
+hcf, lcm of 3 nums, decimal to binary
 get questions from the following links:
 https://www.youtube.com/watch?v=FMhyPobb5Mk
 
