@@ -1,32 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
+import BasicComp from "./BasicComp";
+import withButtons from "./patterns/withButtons";
 
 function App() {
-  // for (var i = 1; i <= 3; i++) {
-  //   setTimeout(() => {
-  //     console.log(i);
-  //   }, 1000);
-  // }
-
-  function left() {
-    return console.log("Hello");
-  }
-
-  function right() {
-    return console.log(true);
-  }
-
-  console.log(left() && right());
-
-  // if (undefined) {
-  //   console.log("truthy");
-  // } else {
-  //   console.log("fals");
-  // }
-
+  // const ContentWithHundred = withButtons(<BasicComp />);
   return (
     <div className='App'>
-      {/* <div>{console.log("All unusual ways how react works")}</div> */}
+      {/* <ComponentRenderProps
+        render={(joke) => (
+          <div>
+            <h6>setup: {joke.setup}</h6>
+            <h3>punchline: {joke.punchline}</h3>
+            <p>{joke.type}</p>
+          </div>
+        )}
+      /> */}
+      {/* <ContentWithHundred items={"tes"} count={"33"} content={"sdff"} /> */}
     </div>
   );
 }
