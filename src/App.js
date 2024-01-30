@@ -15,6 +15,7 @@ function App() {
         )}
       /> */}
       {/* <ContentWithHundred items={"tes"} count={"33"} content={"sdff"} /> */}
+      <BasicComp />
     </div>
   );
 }
