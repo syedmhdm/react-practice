@@ -1,21 +1,35 @@
-import BasicComp from "./BasicComp";
-import withButtons from "./patterns/withButtons";
+import { useEffect, useState } from "react";
+import "./App.css";
+
+// Write a function that get the data from https://jsonplaceholder.typicode.com/users
+// List the names alone
+// Add an input box to search and filter the list based on the typed text values
 
 function App() {
-  // const ContentWithHundred = withButtons(<BasicComp />);
+  const [names, setNames] = useState([]);
+  const [searchText, setSearchText] = useState("");
+
+  function searchHandler(e) {
+    setSearchText(e.target.value);
+  }
+
+  useEffect(function () {
+    async function getData() {
+      const resp = await fetch("https://jsonplaceholder.typicode.com/users");
+      const data = await resp.json();
+      setNames(data.map((el) => el.name));
+    }
+    getData();
+  }, []);
+
+  const namesFiltered = names.filter((el) => el.includes(searchText));
+
   return (
     <div className='App'>
-      {/* <ComponentRenderProps
-        render={(joke) => (
-          <div>
-            <h6>setup: {joke.setup}</h6>
-            <h3>punchline: {joke.punchline}</h3>
-            <p>{joke.type}</p>
-          </div>
-        )}
-      /> */}
-      {/* <ContentWithHundred items={"tes"} count={"33"} content={"sdff"} /> */}
-      <BasicComp />
+      <input value={searchText} onChange={searchHandler} />
+      {namesFiltered.map((el) => (
+        <p key={el}>{el}</p>
+      ))}
     </div>
   );
 }
