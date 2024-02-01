@@ -1,34 +1,24 @@
-import { useEffect, useState } from "react";
 import "./App.css";
+import { useUsers } from "./useUsers";
 
 // Write a function that get the data from https://jsonplaceholder.typicode.com/users
 // List the names alone
 // Add an input box to search and filter the list based on the typed text values
 
 function App() {
-  const [names, setNames] = useState([]);
-  const [searchText, setSearchText] = useState("");
+  const [{ names, searchText }, dispatch] = useUsers();
 
-  function searchHandler(e) {
-    setSearchText(e.target.value);
-  }
-
-  useEffect(function () {
-    async function getData() {
-      const resp = await fetch("https://jsonplaceholder.typicode.com/users");
-      const data = await resp.json();
-      setNames(data.map((el) => el.name));
-    }
-    getData();
-  }, []);
-
-  const namesFiltered = names.filter((el) => el.includes(searchText));
-
+  console.log("rendering");
   return (
     <div className='App'>
-      <input value={searchText} onChange={searchHandler} />
-      {namesFiltered.map((el) => (
-        <p key={el}>{el}</p>
+      <input
+        value={searchText}
+        onChange={(e) =>
+          dispatch({ type: "searchData", payload: e.target.value })
+        }
+      />
+      {names?.map((el, i) => (
+        <p key={i}>{el}</p>
       ))}
     </div>
   );
