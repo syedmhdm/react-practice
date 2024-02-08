@@ -7,8 +7,27 @@
 import { useRandomUsers } from "./hooks/useRandomUsers";
 
 function App() {
-  useRandomUsers();
-  return <div>App</div>;
+  const [allUsers, currentUser, prevUser, nextUser, isLoading] =
+    useRandomUsers();
+
+  return (
+    <div>
+      {allUsers.map((el, i) => (
+        <div key={i}>{`${el.name.title} ${el.name.first} ${el.name.last}`}</div>
+      ))}
+      {!isLoading ? (
+        <div>
+          <img src={currentUser.picture.large} alt='random user' />
+          <p>{`${currentUser.name.title} ${currentUser.name.first} ${currentUser.name.last}`}</p>
+        </div>
+      ) : (
+        <p>Loading...</p>
+      )}
+
+      <button onClick={prevUser}>Prev User</button>
+      <button onClick={nextUser}>Next User</button>
+    </div>
+  );
 }
 
 export default App;
