@@ -36,7 +36,9 @@ function App() {
       Parent count {pCount}
       <button onClick={handleButtonClick}>p change</button>
       {/* {pCount % 2 === 0 && <Child pCount={pCount} />} */}
-      <Child key={pCount} pCount={pCount} />
+      {/* <Child key={pCount} pCount={pCount} /> */}
+      {pCount % 2 === 0 && <Child key={"same"} pCount={pCount + "first"} />}
+      {pCount % 2 !== 0 && <Child key={"same"} pCount={pCount + "second"} />}
       <button onClick={prevUser}>Prev User</button>
       <button onClick={nextUser}>Next User</button>
     </div>
