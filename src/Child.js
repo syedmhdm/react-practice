@@ -16,6 +16,8 @@ function Child({ pCount }) {
     });
   }
 
+  console.log("child rerender");
+
   return (
     <div>
       <button className={styles.childbutton} onClick={handleButtonClick}>

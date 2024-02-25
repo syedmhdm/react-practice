@@ -1,21 +1,23 @@
-import { Fragment, useState } from "react"; /*
+import { Fragment, useState } from "react";
+import Child from "./Child";
+/*
 1. create a custom react hook to fetch users from an API (https://randomuser.me/api) and display their picture and name on the page one
 2. It must return the list of users, the current user, a function to fetch the next user and a function to move back to the previous user
 3. Test the custom react hook in the index.js (tsx - later)
 */
 
-import { useRandomUsers } from "./hooks/useRandomUsers";
-import Child from "./Child";
+import { useRandomUsersContext } from "./context/Context";
 
 function App() {
-  const [allUsers, currentUser, prevUser, nextUser, isLoading] =
-    useRandomUsers();
+  const { allUsers, currentUser, prevUser, nextUser, isLoading } =
+    useRandomUsersContext();
+  const [pCount, setPCount] = useState();
 
-  // const [pCount, setPCount] = useState()
-
-  function pCount(pCount) {
-    console.log("parent comp: " + pCount);
+  function handleButtonClick() {
+    setPCount(pCount + 1);
   }
+
+  console.log("parent renredn");
 
   return (
     <div>
@@ -32,7 +34,7 @@ function App() {
       ) : (
         <p>Loading...</p>
       )}
-      <Child pCount={pCount} />
+      <Child pCount={handleButtonClick} />
       <button onClick={prevUser}>Prev User</button>
       <button onClick={nextUser}>Next User</button>
     </div>
