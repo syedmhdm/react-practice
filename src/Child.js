@@ -11,7 +11,7 @@ function Child({ pCount }) {
     // console.log(count);
     setCount((prev) => {
       const helper = prev + 1;
-      pCount(helper);
+
       return helper;
     });
   }
@@ -20,6 +20,9 @@ function Child({ pCount }) {
 
   return (
     <div>
+      {"pCount: "}
+      {pCount}
+      child counter
       <button className={styles.childbutton} onClick={handleButtonClick}>
         change
       </button>

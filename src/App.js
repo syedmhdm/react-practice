@@ -11,8 +11,7 @@ import { useRandomUsersContext } from "./context/Context";
 function App() {
   const { allUsers, currentUser, prevUser, nextUser, isLoading } =
     useRandomUsersContext();
-  const [pCount, setPCount] = useState();
-
+  const [pCount, setPCount] = useState(0);
   function handleButtonClick() {
     setPCount(pCount + 1);
   }
@@ -34,7 +33,9 @@ function App() {
       ) : (
         <p>Loading...</p>
       )}
-      <Child pCount={handleButtonClick} />
+      Parent count {pCount}
+      <button onClick={handleButtonClick}>p change</button>
+      <Child pCount={pCount} />
       <button onClick={prevUser}>Prev User</button>
       <button onClick={nextUser}>Next User</button>
     </div>
