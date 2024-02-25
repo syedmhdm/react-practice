@@ -37,8 +37,17 @@ function App() {
       <button onClick={handleButtonClick}>p change</button>
       {/* {pCount % 2 === 0 && <Child pCount={pCount} />} */}
       {/* <Child key={pCount} pCount={pCount} /> */}
-      {pCount % 2 === 0 && <Child key={"same"} pCount={pCount + "first"} />}
-      {pCount % 2 !== 0 && <Child key={"same"} pCount={pCount + "second"} />}
+      {pCount % 2 === 0 && (
+        <Fragment key={"same1"}>
+          <div>div</div>
+          <Child key={"same"} pCount={pCount + "first"} />
+        </Fragment>
+      )}
+      {pCount % 2 !== 0 && (
+        <Fragment key={"same1"}>
+          <Child key={"same"} pCount={pCount + "second"} />
+        </Fragment>
+      )}
       <button onClick={prevUser}>Prev User</button>
       <button onClick={nextUser}>Next User</button>
     </div>
